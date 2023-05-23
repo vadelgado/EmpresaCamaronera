@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Metadoatos-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Victor Alfonso Delgado Bolaños" />
+    <meta name="description" content="Taller 3 Seminario UDENAR" />
+    <meta name="keywords" content="HTML,CSS,Javascritp,Bootstrap,taller3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Titulo -->
+    <title>Taller 3 | Formulario</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/shrim.ico" />
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- CSS Propios -->
+    <link rel="stylesheet" href="css/stylep.css" />
+    <!-- iconos Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2&family=Quicksand:wght@500&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <!-- cambio lg a md para se cambie en tama;o mediano \\ navbar-light barra blanca-->
+        <div class="container-fluid">
+            <!--Contenedor se ajusta al 100%-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="quienes-somos.html">
+                    <img src="img/shrim.ico" width="50" alt="Logo de la página web" />
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <!--Contenedor flexible y aliniado al centro por el eje principal y el eje vertical-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="formulario.html">Formulario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pqrs.html">PQRS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+<!--Formulario-->
+    <form class="container">
+        <div class="row ">
+            <div class="col-md-10">
+                <h1>Formulario de Embarcaciones Camaroneras</h1>
+            </div>
+            <div class="col-md-2">
+                <img src="img/logo.png" alt="logo" width="100" height="100">
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <label for="Información" class="col-md-12 form-label titulo-formulario">Información Principal</label>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-3">
+                <label for="nombre" class="form-label">1. Nombre de la Embarcación:</label>
+                <input type="text" class="form-control" name="nombre" id="nombre" required
+                    placeholder="Registre nombre" />
+            </div>
+            <div class="col-sm-3">
+                <label for="capitan" class="form-label">2. Nombre del Capitán: </label>
+                <input type="text" class="form-control" name="capitan" id="capitan" required
+                    placeholder="Nombre Completo" />
+            </div>
+            <div class="col-sm-3">
+                <label for="capitan" class="form-label">3. Licencia del Capitán: </label>
+                <input type="number" class="form-control" name="capitan" id="capitan" required
+                    placeholder="Número Licencia" />
+            </div>
+            <div class="col-sm-3">
+                <label for="fecha" class="form-label">4. Fecha de Registro:</label>
+                <input type="date" class="form-control" name="fecha" id="fecha" required />
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-7">
+                <label for="tipo" class="form-label">5. Tipo de Barco:</label>
+                <select class="form-select" name="tipo" id="tipo">
+                    <option disabled selected>Seleccione</option>
+                    <option value="2">arrastre congelador</option>
+                    <option value="3">palangre</option>
+                    <option value="4">mano</option>
+                    <option value="5">flotación</option>
+                    <option value="6">pequeña escala</option>
+                    <option value="7">camarón rosado</option>
+                    <option value="8">camarón blanco</option>
+                    <option value="9">camarón tigre</option>
+                    <option value="10">camarón azul</option>
+                    <option value="11">camarón jumbo</option>
+                    <option value="12">camarón gigante</option>
+                    <option value="13">camarón de agua dulce</option>
+                    <option value="14">camarón de río</option>
+                    <option value="15">camarón de estuario</option>
+                    <option value="16">camarón de alta mar</option>
+                    <option value="17">camarón de aguas someras</option>
+                </select>
+            </div>
+            <div class="col-sm-5">
+                <label for="num_tripulantes" class="form-label">6. Número de Tripulantes:</label>
+                <input type="number" class="form-control" name="num_tripulantes" id="num_tripulantes" min="10"
+                    max="50" required placeholder="Mínimo:10 Máximo:50" />
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <label for="Información" class="col-md-12 form-label titulo-formulario">Información Tecnica de la
+                Embarcación</label>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-2">
+                <label for="rango" class="form-label">7. Potencia del Motor:</label>
+            </div>
+            <div class="col-sm-6">
+                <input class="form-range" type="range" name="rango" id="rango" min="50" max="5000" value="50"
+                    step="1" onchange="actualizarValor()" />
+            </div>
+            <div class="col-sm-4">
+                <label class="form-label" for="rango">Valor seleccionado &nbsp;:&nbsp;&nbsp;<tab></tab>
+                </label><span id="valor"></span><label> &nbsp;&nbsp;caballos de
+                    fuerza</label>
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-3">
+                <label for="velocidad" class="form-label">8. Velocidad de Crucero (mph):</label>
+                <input class="form-control" type="number" id="velocidad" name="velocidad" min="20" max="100"
+                    step="0.1" required placeholder="Mínimo:20 Máximo:100" />
+            </div>
+            <div class="col-sm-3">
+                <label for="direccion" class="form-label">9. Direccion del Barco:</label>
+                <select class="form-select">
+                    <option disabled selected value="">Seleccione</option>
+                    <option value="timon">Timón</option>
+                    <option value="puente">Puente de mando</option>
+                    <option value="sonar">Sistema de sonar</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <label for="combustible" class="form-label">10.Cantidad de Combustible (gal):</label>
+                <input class="form-control" type="number" id="combustible" name="combustible" required
+                    min="2000" step="0.1" placeholder="Mínimo:2000 galones" />
+            </div>
+            <div class="col-sm-3">
+                <label for="eslora" class="form-label">11. Eslora, Largo (m):</label>
+                <input class="form-control" type="number" id="eslora" name="eslora" required step="0.01"
+                    min="20" placeholder="Mínimo:20 metros" />
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-3">
+                <label for="manga" class="form-label">12. Manga, Ancho (m):</label>
+                <input class="form-control" type="number" id="manga" name="manga" required step="0.01"
+                    min="10" placeholder="Mínimo:10 metros" />
+            </div>
+            <div class="col-sm-3">
+                <label class="form-label" for="calado">13. Calado, bajo el agua (m)</label>
+                <input class="form-control" type="number" name="calado" id="calado" required step="0.01"
+                    min="4" placeholder="Mínimo:4 metros" />
+            </div>
+            <div class="col-sm-3">
+                <label class="form-label" for="tipo_propulsion">14. Tipo de Propulsión:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="motor-diesel" name="propulsion"
+                        value="Motor Diesel" /><label class="form-check-label" for="motor-diesel">Motor
+                        Diesel</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="electrica" name="propulsion"
+                        value="Eléctrica" />
+                    <label class="form-check-label" for="electrica">Eléctrica</label>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="motor-gasolina" name="propulsion"
+                        value="Motor de Gasolina" /><label for="motor-gasolina"
+                        class="form-check-label">Motor de Gasolina</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="hibrida" name="propulsion"
+                        value="Híbrida" /><label class="form-check-label" for="hibrida">Híbrida</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-3">
+                <label class="form-label" for="material_construccion">15. Material de
+                    Construcción:</label>
+                <select name="material" class="form-select">
+                    <option disabled selected value="">Seleccione</option>
+                    <option value="madera">Madera</option>
+                    <option value="fibra_vidrio">Fibra de vidrio</option>
+                    <option value="aluminio">Aluminio</option>
+                    <option value="acero">Acero</option>
+                    <option value="fibra_carbono">Fibra de carbono</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <label for="num_motores" class="form-label">16. Número de Motores:</label>
+                <input class="form-control" type="number" id="num_motores" name="num_motores" min="2"
+                    required placeholder="Mínimo:2" />
+            </div>
+            <div class="col-sm-3">
+                <label for="marca_motor" class="form-label">17. Marca de Motor(es):</label>
+                <select class="form-select" name="marca_motor">
+                    <option disabled selected value="">Seleccione</option>
+                    <option value="Caterpillar">Caterpillar</option>
+                    <option value="Cummins">Cummins</option>
+                    <option value="Volvo Penta">Volvo Penta</option>
+                    <option value="Yanmar">Yanmar</option>
+                    <option value="MTU">MTU</option>
+                    <option value="Scania">Scania</option>
+                    <option value="MAN">MAN</option>
+                    <option value="Mercury">Mercury</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Yamaha">Yamaha</option>
+                    <option value="Evinrude">Evinrude</option>
+                    <option value="Johnson">Johnson</option>
+                    <option value="Tohatsu">Tohatsu</option>
+                    <option value="Mercruiser">Mercruiser</option>
+                    <option value="Mariner">Mariner</option>
+                    <option value="Perkins">Perkins</option>
+                    <option value="Deutz">Deutz</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Kubota">Kubota</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <label class="form-label" for="potencia_motor">18. Potencia del Motor(hp):</label>
+                <input class="form-control" type="number" id="potencia_motor" name="potencia_motor"
+                    min="1000" step="0.1" required placeholder="Mínimo:1000" />
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-3">
+                <label class="form-label" for="tipo_motor">19. Tipo de Motor:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="tipo_motor_gasolina"
+                        name="tipo_motor" value="Gasolina" />
+                    <label class="form-check-label" for="tipo_motor_gasolina">Gasolina</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="tipo_motor_diesel"
+                        name="tipo_motor" value="Diesel" />
+                    <label class="form-check-label" for="tipo_motor_diesel">Diesel</label>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <br><br>
+                <input class="form-check-input" type="radio" id="tipo_motor_electrico"
+                    name="tipo_motor" value="Electrico" />
+                <label class="form-check-label" for="tipo_motor_electrico">Eléctrico</label>
+            </div>
+            <div class="col-sm-6">
+                <label class="form-label" for="color">20. Color:</label> <br>
+                <input class="form-control-color" type="color" name="color" id="color" />
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <label for="Información" class="col-md-12 form-label titulo-formulario">Información
+                de Implementos Seguridad</label>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-3">
+                <div class="form-check">
+                    <label class="form-check-label" for="ancla">21. ¿Tiene Ancla?</label>
+                    <input class="form-check-input" type="checkbox" id="ancla" name="ancla" />
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="sonar">25. ¿Tiene Sonar?</label>
+                    <input class="form-check-input" type="checkbox" id="sonar" name="sonar" />
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="chaleco_salvavidas">29. ¿Tiene Chaleco
+                        Salvavidas?</label>
+                    <input class="form-check-input" type="checkbox" id="chaleco_salvavidas"
+                        name="chaleco_salvavidas" />
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="form-check">
+                    <label class="form-check-label" for="balsa_salvavidas">22. ¿Tiene Balsa
+                        Salvavidas?</label>
+                    <input class="form-check-input" type="checkbox" name="balsa_salvavidas"
+                        id="balsa_salvavidas" />
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="radar">26. ¿Tiene Radar?</label>
+                    <input class="form-check-input" type="checkbox" id="radar" name="radar" />
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="bengalas">30. ¿Tiene Bengalas?</label>
+                    <input class="form-check-input" type="checkbox" id="bengalas"
+                        name="bengalas" />
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="form-check">
+                    <label class="form-check-label" for="radiocomunicacion">23. ¿Tiene
+                        Radiocomunicación?</label>
+                    <input class="form-check-input" type="checkbox" id="radiocomunicacion"
+                        name="radiocomunicacion" />
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="luz_navegacion">27. ¿Tiene faro de
+                        Navegación?</label>
+                    <input class="form-check-input" type="checkbox" id="luz_navegacion"
+                        name="luz_navegacion" />
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="form-check">
+                    <label class="form-check-label" for="gps">24. ¿Tiene GPS?</label>
+                    <input class="form-check-input" type="checkbox" id="gps" name="gps" />
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="extintor">28. ¿Tiene Extintor?</label>
+                    <input class="form-check-input" type="checkbox" id="extintor"
+                        name="extintor" />
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <label for="Información" class="col-md-12 form-label titulo-formulario">Información
+                de Operatividad</label>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-4">
+                <label class="form-label" for="procedencia">31. Procedencia:</label>
+                <select class="form-select" id="procedencia" name="procedencia">
+                    <option disabled selected value="">Seleccione</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Buenaventura">Buenaventura</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Coveñas">Coveñas</option>
+                    <option value="Santa Marta">Santa Marta</option>
+                    <option value="Turbo">Turbo</option>
+                    <option value="Tumaco">Tumaco</option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <label class="form-label" for="destino">32. Destino:</label>
+                <select class="form-select" id="destino" name="destino">
+                    <option disabled selected value="">Seleccione</option>
+                    <option value="Barranquilla">Barranquilla</option>
+                    <option value="Buenaventura">Buenaventura</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Coveñas">Coveñas</option>
+                    <option value="Santa Marta">Santa Marta</option>
+                    <option value="Turbo">Turbo</option>
+                    <option value="Tumaco">Tumaco</option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+                <label class="form-label" for="estado">33. Estado:</label>
+                <select class="form-select" name="estado" id="estado">
+                    <option disabled selected value="">Seleccione</option>
+                    <option value="activo">Activo</option>
+                    <option value="inactivo">Inactivo</option>
+                    <option value="en_mantenimiento">En Mantenimiento</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-12">
+                <label class="form-label" for="observaciones">Observaciones:</label>
+                <textarea class="form-control" rows="5"
+                    placeholder="Ingresa las observaciones encontradas."
+                    name="observaciones" id="observaciones" cols="5" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-12">
+                <a href="https://cesasin.mx/wp-content/uploads/2018/01/1_Manual_de_Buenas_Practicas_de_Manejo_Abordo_para_Embarcaciones_Camaroneras.pdf"
+                    target="_blank">Manual de Buenas Prácticas</a>
+                <input class="form-check-input" type="checkbox" name="veracidad"
+                    id="veracidad" required />
+                <label class="form-check-label" for="veracidad">Declaro conocer y practicar
+                    el Manual de Buenas Prácticas de Manejo
+                    Abordo para Embarcaciones Camaroneras.</label>
+
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-sm-6" style="text-align: center">
+                <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
+            </div>
+            <div class="col-sm-6" style="text-align: center">
+                <button type="reset" class="btn btn-primary btn-lg">Limpiar</button>
+            </div>
+        </div>              
+    </form>
+<br>
+      <!-- Pie de Pagina -->
+<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img src="img/shrim.ico" alt="mascota" class="footer-logo">
+        <p class="footer-texto text-center">Del mar a tu mesa, sabor fresco en cada bocado.<br>
+          ¡Esperamos poder atenderte pronto y satisfacer tus necesidades de camarones frescos y deliciosos!</p>
+          <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://twitter.com/loscamarones_?lang=es"target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/explore/tags/camarones/?hl=es"target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/people/Restaurante-El-Camar%C3%B3n/100065475853015/"target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/results?search_query=camarones"target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="mailto:camarones@correo.com"target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+          <div class="derechos-de-autor">Maquetado por Victor Alfonso Delgado Bolaños UDENAR (2023) &#169;</div>
+</footer>
+<!-- Boton Flotante -->
+<a href="#" class="floating-button" onclick="scrollToTop()">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+    <!-- js Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+<script>
+    function actualizarValor() {
+        // Obtener el valor actual del control deslizante
+        var valorSeleccionado = document.getElementById("rango").value;
+
+        // Actualizar el elemento que muestra el valor seleccionado
+        document.getElementById("valor").textContent = valorSeleccionado;
+    }
+</script>

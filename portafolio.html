@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!--Metadoatos-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Victor Alfonso Delgado Bolaños" />
+  <meta name="description" content="Taller 3 Seminario UDENAR" />
+  <meta name="keywords" content="HTML,CSS,Javascritp,Bootstrap,taller3" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Titulo -->
+  <title>Taller 3 | Portafolio</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/shrim.ico" />
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- CSS Propios -->
+  <link rel="stylesheet" href="css/stylep.css" />
+  <!-- iconos Bootstrap -->
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2&family=Quicksand:wght@500&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <!-- cambio lg a md para se cambie en tama;o mediano \\ navbar-light barra blanca-->
+    <div class="container-fluid"> <!--Contenedor se ajusta al 100%-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="quienes-somos.html">
+          <img src="img/shrim.ico" width="50" alt="Logo de la página web">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <!--Contenedor flexible y aliniado al centro por el eje principal y el eje vertical-->
+          <li class="nav-item">
+            <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">Formulario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="portafolio.html">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pqrs.html">PQRSD</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Portafolio -->
+  <section class="portafolio-activo seccion-clara d-felx flex-column">
+    <h2 class="seccion-titulo texto-negro">Productos y Servicios</h2>
+    <h3 class="seccion-descripcion">"Disfruta de nuestra variedad de productos relacionados con la pesca y el
+      procesamiento de camarones."</h3>
+    <!-- Galeria de Portafolio -->
+    <div class="container text-center portafolio-contenedor">
+      <div class="row">
+        <!-- Servicio 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="portafolio">
+            <img src="img/por1.jpeg" alt="Servicio 1">
+            <div class="overlay">
+              <p>Camarones frescos</p>
+              <div class="iconos-contenedor">
+                <a href="https://listado.mercadolibre.com.co/camarones#D[A:camarones]" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-shop"></i>
+                </a>
+                <a href=" https://wa.me/573104557906" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="portafolio">
+            <img src="img/por2.jpeg" alt="Servicio 2">
+            <div class="overlay">
+              <p>Camarones congelados</p>
+              <div class="iconos-contenedor">
+                <a href="https://listado.mercadolibre.com.co/camarones#D[A:camarones]" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-shop"></i>
+                </a>
+                <a href=" https://wa.me/573104557906" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="portafolio">
+            <img src="img/por3.jpeg" alt="Servicio 3">
+            <div class="overlay">
+              <p>Productos derivados del camarón</p>
+              <div class="iconos-contenedor">
+                <a href="https://listado.mercadolibre.com.co/camarones#D[A:camarones]" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-shop"></i>
+                </a>
+                <a href=" https://wa.me/573104557906" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="portafolio">
+            <img src="img/por4.jpeg" alt="Servicio 4">
+            <div class="overlay">
+              <p>Servicios de procesamiento</p>
+              <div class="iconos-contenedor">
+                <a href="https://listado.mercadolibre.com.co/camarones#D[A:camarones]" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-book-half"></i>
+                </a>
+                <a href=" https://wa.me/573104557906" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="portafolio">
+            <img src="img/por5.jpeg" alt="Servicio 5">
+            <div class="overlay">
+              <p>Investigación y desarrollo</p>
+              <div class="iconos-contenedor">
+                <a href="https://listado.mercadolibre.com.co/camarones#D[A:camarones]" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-book-fill"></i>
+                </a>
+                <a href=" https://wa.me/573104557906" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Servicio 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="portafolio">
+            <img src="img/por6.jpeg" alt="Asesoramiento técnico">
+            <div class="overlay">
+              <p>Asesoramiento técnico</p>
+              <div class="iconos-contenedor">
+                <a href="https://listado.mercadolibre.com.co/camarones#D[A:camarones]" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-book"></i>
+                </a>
+                <a href=" https://wa.me/573104557906" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.santa-priscila-admin.com/camarones.php" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más Servicios
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <!--Testimonios -->
+  <section class="testimonio seccion-clara">
+    <h2 class="seccion-titulo">Testimonios</h2>
+    <h3 class="seccion-descripcion">Estos son alginos testimonios de los Clientes</h3>
+    <!--Carrusel-->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/cliente1.jpeg" alt="Foto Agua Viva">
+            <p class="testimonio-texto">Siempre compro camarones frescos de la empresa de barcos camaroneros y son
+              simplemente los mejores. </p>
+            <div class="testimonio-info">
+              <p class="cliente">Juan</p>
+              <p class="cargo">Propietario</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/cliente2.jpeg" alt="Foto Agua Viva">
+            <p class="testimonio-texto">Los camarones de la empresa de barcos camaroneros son frescos y deliciosos. ¡No
+              hay comparación!</p>
+            <div class="testimonio-info">
+              <p class="cliente">María</p>
+              <p class="cargo">Aficionada a los mariscos</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/cliente3.jpeg" alt="Foto Agua Viva">
+            <p class="testimonio-texto">La calidad de los camarones suministrados por la empresa de barcos camaroneros
+              es excelente.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Roberto</p>
+              <p class="cargo">Chef de un crucero.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+  <!-- Contacto -->
+  <section class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 titulo">
+            ¡Contáctanos!
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Estamos encantados de responder a tus preguntas y ayudarte en todo lo que necesites.
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:camaronescaribe@correo.com">
+              <button type="button">
+                Contacto <i class="bi bi-envelope-at-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img src="img/shrim.ico" alt="mascota" class="footer-logo">
+    <p class="footer-texto text-center">Del mar a tu mesa, sabor fresco en cada bocado.<br>
+      ¡Esperamos poder atenderte pronto y satisfacer tus necesidades de camarones frescos y deliciosos!</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com/loscamarones_?lang=es"target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/explore/tags/camarones/?hl=es"target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/people/Restaurante-El-Camar%C3%B3n/100065475853015/"target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com/results?search_query=camarones"target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="mailto:camarones@correo.com"target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Maquetado por Victor Alfonso Delgado Bolaños UDENAR (2023) &#169;</div>
+    </footer>
+  <!-- Boton Flotante -->
+<a href="#" class="floating-button" onclick="scrollToTop()">
+  <i class="bi bi-arrow-up"></i>
+</a>
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+  <!-- js Bootstrap -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
