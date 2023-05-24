@@ -425,6 +425,29 @@ footer{
     font-size: 20px;
   }
 }
+/*Terminos y condiciones*/
+.accordion-header h2 {
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.accordion-body p {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #333;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.modal-footer .btn-secondary {
+
+  background-color: #f44336;
+  color: #fff;
+}
 
 /*Adaptable (Responsivo) media query*/
 @media screen and (max-width: 800px) {

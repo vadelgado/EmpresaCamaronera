@@ -134,7 +134,112 @@
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
         <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
-        <a href="terminos_y_condiciones.html" target="_blank">Leer términos y condiciones</a>
+
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalterminos">Leer términos y condiciones</a>
+
+  <!-- Ventana emergente -->
+  <div class="modal fade" id="modalterminos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Términos y Condiciones</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row d-flex flex-column justify-content-center">
+              <div class="col-lg-8 offset-lg-2">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h2>1. Introducción</h2>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><p>
+                        Bienvenido/a a los Términos y Condiciones de la Empresa Pesquera Camaronera. Estos términos rigen el uso de nuestros servicios y productos. Al utilizar nuestro sitio web y nuestros servicios, aceptas cumplir con estos términos y condiciones. Si no estás de acuerdo con alguno de los puntos establecidos, por favor, no utilices nuestros servicios.
+                      </p></div>
+                    </div>
+                  </div>
+        
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h2>2. Productos y Servicios</h2>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><p>
+                        Nuestra empresa pesquera camaronera se dedica a la pesca y comercialización de camarones. Los productos que ofrecemos están sujetos a disponibilidad y podrían variar según la temporada y las condiciones del mercado. Nos esforzamos por ofrecer productos frescos y de alta calidad a nuestros clientes.
+                      </p></div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h2>3. Responsabilidad</h2>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><p>
+                        La Empresa Pesquera Camaronera no se hace responsable por cualquier daño directo, indirecto, incidental o consecuente que pueda surgir del uso de nuestros productos o servicios. No nos responsabilizamos por la pérdida, robo o daño de los productos una vez entregados al cliente. Es responsabilidad del cliente asegurarse de que los productos sean almacenados y manipulados adecuadamente.
+                      </p></div>
+                    </div>
+                  </div>
+        
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                        <h2>4. Política de Devoluciones</h2>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><p>
+                        Si el cliente no está satisfecho con la calidad de nuestros productos, debe comunicarse con nosotros dentro de las 24 horas posteriores a la entrega para informarnos sobre el problema. Evaluaremos cada caso y, si corresponde, realizaremos un reemplazo o un reembolso del producto. No aceptaremos devoluciones después de las 24 horas de la entrega.
+                      </p></div>
+                    </div>
+                  </div>
+        
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                        <h2>5. Privacidad</h2>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><p>
+                        Respetamos tu privacidad y protegemos tus datos personales de acuerdo con nuestra Política de Privacidad. Al utilizar nuestros servicios, aceptas nuestras prácticas de recopilación y uso de datos.
+                      </p></div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                        <h2>6. Modificaciones</h2>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><p>
+                        Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento sin previo aviso. Cualquier cambio entrará en vigencia inmediatamente después de su publicación en nuestro sitio web. Te recomendamos revisar periódicamente estos términos para estar al tanto de las actualizaciones.
+                      </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-muted">Última actualización: 24 mayo 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
       </div>
       <button type="submit" class="btn btn-success">
         Enviar
