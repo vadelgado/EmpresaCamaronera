@@ -4,9 +4,22 @@
   padding: 1rem;
   background-color: #dce8f5;
 }
+
+.navbar-brand img {
+  width: 50px;
+  height: auto;
+}
+
 .navbar-collapse {
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
 }
 
 /*Estilos Generales*/
@@ -96,6 +109,7 @@ form {
   font-size: 1.5rem;
   color: #615151;
 }
+
 
 /*Sobre mi*/
 .sobre-mi {
@@ -334,58 +348,62 @@ form {
   color: black;
 }
 
-/* Pie de pagina */
-footer{
-  min-height: 500px;  
+/* Pie de página */
+footer {
+  min-height: 500px;
+  background-color: #f8f9fa;
+  padding: 30px 0;
 }
-.footer-logo{
+
+.footer-logo {
   height: 80px;
   width: 80px;
   margin: 10px;
 }
-.footer-texto{
+
+.footer-texto {
   font-size: 1.5rem;
   padding: 20px;
   margin-bottom: 30px;
   font-family: 'Quicksand', sans-serif;
 }
-.iconos-redes-sociales a{
+
+.iconos-redes-sociales a {
   width: 50px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px;
+  padding: 5px;
   margin: 10px;
-  border: 2px solid white;
+  border: 2px solid transparent;
   border-radius: 50%;
   transition: all 0.2s ease-in;
+  background-color: #fff;
+  color: #555;
 }
-.iconos-redes-sociales i{
-  color: white;
-  font-size: 1.5rem;
-  transition: all 0.2s ease-in;
+
+.iconos-redes-sociales a:hover {
+  background-color: rgb(13, 110, 253);
+  border-color: rgb(13, 110, 253);
+  color: #fff;
 }
-.iconos-redes-sociales a:hover{
-  background-color: white;
-  border: 2px solid rgb(13,110,253);
-}
-.iconos-redes-sociales a:hover i{
-  color: black;
-}
-.derechos-de-autor{
+
+.derechos-de-autor {
   font-size: 15px;
   color: #aeaeae;
   padding: 20px;
 }
+
 .checkbox-button-container {
   display: flex;
   align-items: center;
 }
 
 .checkbox-button-container .form-check {
-  margin-right: 10px; /* Puedes ajustar el valor según el espacio deseado */
+  margin-right: 15px;
 }
+
 
 /* Boton FLotante*/
 .floating-button {
@@ -449,6 +467,8 @@ footer{
   color: #fff;
 }
 
+
+
 /*Adaptable (Responsivo) media query*/
 @media screen and (max-width: 800px) {
   .testimonio-imagen{
@@ -475,6 +495,6 @@ footer{
 }
 @media screen and (min-width: 700px) {
   .hero-inferior-imagen {
-    max-width: 600px;
+    max-width: 450px;
   }
 }
